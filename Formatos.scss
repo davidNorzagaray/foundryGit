@@ -1,0 +1,494 @@
+
+
+
+
+/* Reseteo */
+*{
+    margin: 0px;
+    padding: 0px;
+    }
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    /* Color de fondo de la pagina */
+    background-color: rgb(218, 218, 218);
+    
+    min-height: 90%;
+
+  /* formatos de texto */
+    h2{
+      color: rgb(52, 55, 58);
+    }
+
+    h3{
+      margin-top: 50px;
+      margin-left: 20;
+      color: rgb(52, 55, 58);
+
+    }
+    h4{
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    }
+    .center {
+      display: block;
+      text-align: center;
+     margin-top: 100px;
+      margin-bottom: 60px;  
+    }
+    p{
+    line-height: 2;
+    }   
+
+    .pageFiller{
+      min-height: 600px;
+    }
+
+}
+
+
+
+
+
+/* nosotros */
+$bloqueWidth:600px;
+.contentPad{
+  display: block;
+  justify-content: center;
+  height: auto;
+  max-width: $bloqueWidth;
+  padding: 10px 20px 10px 20px;
+  text-align: justify;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 60px;
+}
+
+.nosotrosFoto{
+    height: auto;
+    width: $bloqueWidth; 
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+
+/* actividad flexbox */
+.coleccionesPro {
+    max-width: 700px;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.item{
+    height: 300px;
+    width: 200px;
+    margin: 10px;
+    background-color: white;
+    text-align: center;
+    border: none; 
+    border-radius: 0;
+}
+
+.marginFotoProducto{ 
+    margin-right: auto;
+    margin-left: auto;
+    display: block;  
+}
+
+.precio{
+    padding: 10px;
+    font-size: 18px;
+    line-height: 2;
+    font-weight: bold;
+}
+
+
+/* Header*/
+header {
+    background-image: 
+    linear-gradient(#000000, #1d1d1d);
+    width: 100%;
+    height: 100px;
+    padding-bottom: 10px;
+    height: 200px;
+
+    .logoBox {
+      color: white;
+      font-size: 2.5rem;
+      padding-top: 40px;
+      padding-left: 25%;
+      padding-bottom: 20px;
+    }
+
+}
+  
+
+/* carousel*/
+$heightC:700px;
+
+    .carouselFormat {
+      background-color: #000000;
+      height: $heightC;
+      width: auto;
+     margin-left: auto;
+      margin-right: auto;
+     padding-top: 50px;
+    }
+    .carouselCaptionsF{
+      line-height: 2;
+      text-align: left;
+      padding-left: 10%;
+     padding-bottom: 5%;
+    }
+    .carouselCaptionsH{
+      line-height: 2;
+      font-size: 25px;
+      font-weight: bold;
+    }
+    .carouselCaptionsF2{
+      line-height: 0.5;
+      font-size: 14px;
+    }
+      .carImgH{
+     height: $heightC;
+     
+      margin-right: auto;
+      margin-left: auto;
+      display: block;  
+      }
+
+
+
+/* barra de navegacion*/
+nav {
+    z-index: 5;
+    height: 60px;
+  }
+  
+  .flexMenu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    padding-top: 20px;
+    padding-left: 22%;
+    font-size: 14px
+  }
+  
+  li a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;  
+  }
+  
+  li a:hover {
+    background-color: rgb(255, 189, 45);
+    color: #000000;
+    padding: 20px;
+  }
+  .navbar-toggler{
+    justify-items: left;
+}
+  
+  
+/*footer*/
+footer {
+    position: inherit;
+    bottom: 0px;
+    background-image: 
+    linear-gradient( #0f0f0f, #000000);
+    width: 100%;
+    height: 220px;
+
+    h5{
+      color: darkgrey;
+      font-size: 30px;
+      line-height: 1;
+      padding-top: 40px;
+      padding-left: 25%;
+      padding-bottom: 20px;
+    }
+
+   h6{
+      font-size: 14px;
+      color: white;
+      line-height: 0.5;
+      padding-top: 10px;
+      padding-left: 25%;  
+    }
+}
+
+
+
+
+
+form{
+    display: block;
+    padding-top: 60px;
+    padding-left: 25%;
+    height: 400px;
+    width: auto;
+
+
+}
+
+
+
+
+
+
+
+
+/*Media Queries*/
+@media only screen and (max-width: 1024px) {
+  header .logoBox {
+    color: white;
+    font-size: 2.5rem;
+    padding-top: 40px;
+    padding-left: 12%;
+    padding-bottom: 20px;
+  }
+  .flexMenu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    padding-top: 20px;
+    padding-left: 8%;
+    font-size: 14px
+  }
+  
+  
+  footer{ 
+    
+    h5{
+      color: darkgrey;
+      font-size: 30px;
+      line-height: 1;
+      padding-top: 40px;
+      padding-left: 12%;
+      padding-bottom: 20px;
+    }
+  
+    h6{
+      font-size: 14px;
+      color: white;
+      line-height: 0.5;
+      padding-top: 10px;
+      padding-left: 12%;  
+      }
+  }
+  .carImgH{
+    height: $heightC*0.8;
+     margin-right: auto;
+     margin-left: auto;
+     display: block;  
+     }
+     .carouselFormat {
+      background-color: #000000;
+      height: $heightC*0.8;
+      width: auto;
+     margin-left: auto;
+      margin-right: auto;
+     padding-top: 50px;
+    }
+
+    .carouselCaptionsF{
+      line-height: 2;
+      text-align: left;
+      padding-left: 7.5%;
+     padding-bottom: 3.5%;
+     font-size: 14px;
+    }
+    .carouselCaptionsH{
+      line-height: 2;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .carouselCaptionsF2{
+      line-height: 0.5;
+      font-size: 12px;
+    }  
+    
+.contentPad{
+  display: block;
+  justify-content: center;
+  height: auto;
+  max-width: $bloqueWidth*0.8;
+  padding: 10px 20px 10px 20px;
+  text-align: justify;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 60px;
+}
+
+.nosotrosFoto{
+    height: auto;
+    width:  $bloqueWidth*0.8;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  header {
+      .logoBox {
+      color: white;
+      font-size: 2.5rem;
+      padding-top: 40px;
+      padding-bottom: 20px;
+    } 
+  }
+
+  .flexMenu {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding-top: 20px;
+    margin-left: 15px;
+    font-size: 14px
+  }
+
+  footer {
+    h5{
+        color: darkgrey;
+        font-size: 30px;
+        line-height: 1;
+        padding-top: 40px;
+        padding-left: 5%;
+        padding-bottom: 20px;
+    }
+  
+    h6{
+        font-size: 14px;
+        color: white;
+        line-height: 0.5;
+        padding-top: 10px;
+        padding-left: 5%;  
+    }
+}
+
+.navbar-header {
+  display:flex;
+}
+.navbar-toggle {
+  order:0;
+  margin-left:5px;
+  margin-right:0;
+}
+.navbar-brand {
+  order:1;
+}
+
+    
+.carImgH{
+  height: $heightC*0.6;
+  
+   margin-right: auto;
+   margin-left: auto;
+   display: block;  
+   }
+   .carouselFormat {
+    background-color: #000000;
+    height: $heightC*0.6;
+    width: auto;
+   margin-left: auto;
+    margin-right: auto;
+   padding-top: 50px;
+  }
+
+  .carouselCaptionsF{
+    line-height: 1;
+    text-align: left;
+    padding-left: 5%;
+   padding-bottom: 2.5%;
+   font-size: 10px;
+  }
+  .carouselCaptionsH{
+    line-height: 1;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .carouselCaptionsF2{
+    line-height: 0.25;
+    font-size: 9px;
+  }
+  .contentPad{
+    display: block;
+    justify-content: center;
+    height: auto;
+    max-width: $bloqueWidth*0.6;
+    padding: 10px 20px 10px 20px;
+    text-align: justify;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 60px;
+  }
+  
+  .nosotrosFoto{
+      height: auto;
+      width: $bloqueWidth*0.6; 
+      margin-top: 10px;
+      margin-bottom: 20px;
+  }
+}
+/*Media Queries*/
+
+
+
+.fotos:hover {
+  transition: 2s;
+  transform: scale(1.1);
+}
+
+.newsColorT{
+  color: #fff;
+}
+
+.newsletter {
+  padding: 80px 0;
+  background: #2c2c2c;
+  }
+  
+  .newsletter .content {
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2; }
+ 
+  .newsletter .content .form-control {
+  height: 50px;
+  border-color: #ffffff;
+  border-radius:0;
+  }
+  .newsletter .content.form-control:focus {
+  box-shadow: none;
+  border: 2px solid #ffffff;
+  }
+  .newsletter .content .btn {
+  min-height: 50px; 
+  border-radius:0;
+  background: #7e7e7e;
+  color: #fff;
+  font-weight:600;
+  }
+
+ 
+ 
+
+
