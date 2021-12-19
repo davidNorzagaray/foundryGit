@@ -473,4 +473,18 @@ form {
   color: #fff;
   font-weight: 600;
 }
+
+.videoResponsive {
+  position: relative;
+  margin: 0 auto;
+  padding-bottom: 56.25%;
+}
+
+.videoResponsive iframe {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
 /*# sourceMappingURL=Formatos.css.map */
